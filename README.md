@@ -5,6 +5,11 @@ With GraphQL, clients can specify exactly what data they need, and the server re
 
 Rest API Endpoint for get all users: http://localhost:5000/rest/getAllUsers
 
+When the user hit on the port 80 they will redirect to port 5000
+
+=>> http://ip:80/api/rest/getAllUsers redirect to http://ip:5000/rest/getAllUsers
+ 
+
 GraphQL Endpont: http://localhost:5000/graphql
 
 Query for below scenarios:
@@ -17,5 +22,3 @@ query{ findUserById(id:1000){ id firstName lastName email } }
 
 Create User with mutation operation
 mutation{ createUser(firstName:"sachin",lastName:"purohit",email:"sachin@sachin.com",password:"password"){ id firstName lastName email } }
-
-Test Test Test AWS AWS AWS 
